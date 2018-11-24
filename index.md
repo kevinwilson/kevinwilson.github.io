@@ -2,10 +2,5 @@
 layout: default
 ---
 
-## A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
+## Public health informatician, computer programmer, and epidemiologist with global health experience.
 
-### Kevin Wilson
-
-Welcome to my website.
-
-> "Quote here
