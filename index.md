@@ -28,10 +28,6 @@ In the LR model, there were 8,716 true positives, 9,076 true negatives, 3,344 fa
 
 This study assessed the feasibility of LR and ANN for the prediction of MRSA infection in surgical patients using a range of demographic, clinical, procedural, and hospital-related factors. The results showed that both algorithms are effective modeling approaches with reasonable sensitivity and specificity and suggest that a clinical decision support tool based on either model could be informative in clinical practice. While performance was reasonable, further research is necessary to assess the impact of a broader range of predictors.
 
-Share this abstract:
-
-{% include sharing.html %}
-
 #### References
 
 [^1]: Klein EY, Mojica N, Jiang W, et al. Trends in Methicillin-Resistant Staphylococcus aureus Hospitalizations in the United States, 2010-2014. Clin Infect Dis. 2017;65(11):1921-1923.
