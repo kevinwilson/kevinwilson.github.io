@@ -3,7 +3,7 @@ title: Kevin Wilson, MPH MS
 tag_text: Kevin Wilson
 description: Public health informatician, computer programmer, and epidemiologist with global health experience.
 url: "http://kevinwilson.github.io"
-baseurl: "http://kevinwilson.github.io"
+baseurl: ""
 
 font-awesome-include: true # make this false if you don't need font-awesome
 
