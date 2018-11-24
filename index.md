@@ -4,6 +4,10 @@ layout: default
 
 ## Public health informatician, computer programmer, and epidemiologist with global health experience.
 
+### My Research
+
+> The articles below describe my current research interests.
+
 ### A Comparision of Machine Learning Methods for the Prediction of MRSA Infection in Surgical Patients
 
 > This abstract presents prelimiary results from my PhD research and aims to determine whether MRSA infection can be predicted based on a range of demographic factors and clinical signs and symptoms.
