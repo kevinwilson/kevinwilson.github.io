@@ -29,3 +29,8 @@ This study assessed the feasibility of LR and ANN for the prediction of MRSA inf
 [^1]: Klein EY, Mojica N, Jiang W, et al. Trends in Methicillin-Resistant Staphylococcus aureus Hospitalizations in the United States, 2010-2014. Clin Infect Dis. 2017;65(11):1921-1923.
 
 [^2]: Humphreys H, Becker K, Dohmen PM, et al. Staphylococcus aureus and surgical site infections: benefits of screening and decolonization before surgery. J Hosp Infect. 2016;94(3):295-304.
+
+<pre><code>{% raw  %}
+{% include sharing.html %}
+{% endraw %}
+</code></pre>
