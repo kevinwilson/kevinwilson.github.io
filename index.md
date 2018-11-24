@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 
 ## Public health informatician, computer programmer, and epidemiologist with global health experience.
