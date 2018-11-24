@@ -6,6 +6,8 @@ layout: default
 
 ### A Comparision of Machine Learning Methods for the Prediction of MRSA Infection in Surgical Patients
 
+> This abstract presents prelimiary results from my PhD research and aims to determine whether MRSA infection can be predicted based on a range of demographic factors and clinical signs and symptoms.
+
 #### Description of the Problem
 
 Methicillin-resistant Staphylococcus aureus (MRSA) is the leading cause of antibiotic resistance related mortality in surgical patients.[^1] Effective prediction of MRSA would facilitate the prophylactic use of appropriate antibiotics or application of other prevention techniques, which have been shown to improve clinical outcomes.[^2]  While there is a range of patient, procedural and hospital level factors that have been shown to increase the risk of a surgical patient contracting a MRSA infection, research is less clear on the best approaches to developing predictive models for incorporation into a clinical decision support system. This study will compare two common modeling approaches — logistic regression (LR) and artificial neural networks (ANN)—for the prediction of MRSA infection in patients undergoing major surgical procedures (MSPs) in the United States.
@@ -22,7 +24,7 @@ In the LR model, there were 8,716 true positives, 9,076 true negatives, 3,344 fa
 
 This study assessed the feasibility of LR and ANN for the prediction of MRSA infection in surgical patients using a range of demographic, clinical, procedural, and hospital-related factors. The results showed that both algorithms are effective modeling approaches with reasonable sensitivity and specificity and suggest that a clinical decision support tool based on either model could be informative in clinical practice. While performance was reasonable, further research is necessary to assess the impact of a broader range of predictors.
 
-##### References:
+#### References
 
 [^1]: Klein EY, Mojica N, Jiang W, et al. Trends in Methicillin-Resistant Staphylococcus aureus Hospitalizations in the United States, 2010-2014. Clin Infect Dis. 2017;65(11):1921-1923.
 
