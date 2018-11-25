@@ -30,5 +30,4 @@ This study assessed the feasibility of LR and ANN for the prediction of MRSA inf
 
 [^2]: Humphreys H, Becker K, Dohmen PM, et al. Staphylococcus aureus and surgical site infections: benefits of screening and decolonization before surgery. J Hosp Infect. 2016;94(3):295-304.
 
-
-
+Updated 11/24/2018.
