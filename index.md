@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Public health informatician, computer programmer, and epidemiologist with global health experience.
+## Biomedical informatician, computer scientist, and epidemiologist with global health experience.
 
 ### A Comparision of Machine Learning Methods for the Prediction of MRSA Infection in Surgical Patients
 
