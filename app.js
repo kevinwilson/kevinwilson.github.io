@@ -62,6 +62,9 @@ function UpdateContent(category) {
         </a>
     `;
 
+    let contentVersion = '';
+    let contentDate = '';
+
     fetch('./content.json').then(
         function(response) {
           if (response.status !== 200) {
@@ -72,6 +75,7 @@ function UpdateContent(category) {
           response.json().then(
               function(data) {
                   documents.innerHTML = data.documents.map(createListItem).join('\n');
+        
               });
            }).catch(function(err) {
               console.log('Fetch Error :-S', err);
@@ -79,6 +83,8 @@ function UpdateContent(category) {
     documents.innerHTML += '</ul>';
 
     translateContent(selectedLanguage);
+
+    updateVersionInfromation
 }
 
 function openSop(name) {

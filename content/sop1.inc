@@ -37,6 +37,6 @@
 
 <button class="mdc-button mdc-button--raised" onclick="closeSop();">
     <span class="mdc-button__ripple"></span> 
-    Close SOP
+    Close document
 </button>
 
