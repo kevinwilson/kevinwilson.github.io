@@ -22,3 +22,34 @@ body {
 .mdc-top-app-bar {
     z-index: 7;
 }
+
+.lakana-document {
+    margin:20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lakana-document h1 {
+    counter-reset: h2counter;
+}
+.lakana-document h2:before {
+    content: counter(h2counter) ".\0000a0\0000a0";
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+}
+.lakana-document h3:before {
+    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+    counter-increment: h3counter;
+}
+.lakana-document h4:before {
+    content: counter(h2counter) "." counter(h3counter)  "." counter(h4counter) ".\0000a0\0000a0";
+    counter-increment: h4counter;
+    
+}
+.lakana-document h4 {
+    display:inline;
+    padding-left: 2em;
+}
+
+.lakana-document h3 {
+    padding-left: 1em;
+}
