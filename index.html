@@ -1,247 +1,82 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kevin Wilson</title>
+    <head>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,600" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: black;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 200;
-            margin: 0;
-            margin-top:20px;
-        }
+        <title>LAKANA Documents</title>
 
-        .full-height {
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
 
-        }
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
 
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: black;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .publink {
-         color: black;
-     }
-
-     .m-b-md {
-        margin-bottom: 30px;
-    }
-</style>
-</head>
-<body>
-    <div class="flex-center position-ref full-height">
-        <div class="top-right links">
-            <a href="#"></a>
+    <body>
+        
+      <aside class="mdc-drawer mdc-drawer--dismissible">
+        <div class="mdc-drawer__header">
+          <h3 class="mdc-drawer__title"><span lang="en">LAKANA Documents</span><span lang="fr">Documents LAKANA</span></h3>
+          <h6 class="mdc-drawer__subtitle"><span lang="en">Document delivery application</span><span lang="fr">Application de livraison de documents</span></h6>
         </div>
+        <div class="mdc-drawer__content">
+          <div class="mdc-list">
+            <hr class="mdc-list-divider">
+            <h6 class="mdc-list-group__subheader"><span lang="en">Category</span><span lang="fr">Catégorie</span></h6>
+            <placeholder id="menu"></placeholder>
 
-        <div class="content">
-            <div class="title">
-                Kevin Wilson
-            </div>
-            <div class="links">
-                <a style='text-decoration:underline;' href="#education">Education</a>           
-                <a style='text-decoration:underline;' href="#research">Research</a>
-                <a style='text-decoration:underline;' href="#pubs">Selected Publications</a>
-                <a style='text-decoration:underline;' href="#skills">Skills</a>
-            </div>
-            <div style="margin:100px;margin-top:10px; margin-bottom:20px;">
-                <br/>
-                <h2><a name='education'>EDUCATION</a></h2>
-                <div style="text-align: left;">
-                  <p>CURRENT</p>
-                  <ul>
-                    <li>Graduate coursework in Biomedical Informatics, Rutgers Biomedical and Health Sciences (PhD Program), Newark, NJ, 2014 to date.</li>
-                </ul>
-            </div>
-            <div style="text-align: left;">
-              <p>COMPLETED</p>
-              <ul>
-                <li>MPH, Epidemiology, University of Liverpool, Liverpool, UK, 2014.</li>
-                <li>MSc, Information Technology (with distinction), University of Liverpool, Liverpool, UK, 2007.</li>
-                <li>BSc, Education with Mathematics (with honors), University of Lancaster, Ormskirk, UK, 1997.</li>
-            </ul>
+            <hr class="mdc-list-divider">
+            <h6 class="mdc-list-group__subheader"><span lang="en">Language</span><span lang="fr">Langue</span></h6>
+            <a class="mdc-list-item" href="#" onclick="setLanguage('en');" id="english-link">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+              <span class="mdc-list-item__text"><span lang="en">English</span><span lang="fr">Anglais</span></span>
+            </a>
+            <a class="mdc-list-item" href="#" onclick="setLanguage('fr');" id="french-link">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+              <span class="mdc-list-item__text"><span lang="en">French</span><span lang="fr">Français</span></span>
+            </a>
+
+            <hr class="mdc-list-divider">
+            <h6 class="mdc-list-group__subheader"><span lang="en">Options</span><span lang="fr">Les options</span></h6>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">cached</i>
+              <span class="mdc-list-item__text"><span lang="en">Update content</span><span lang="fr">Mettre à jour le contenu</span></span>
+            </a>
+
+          </div>
+         
+  
         </div>
-    </div>
-    <div style="margin:100px;margin-top:10px; margin-bottom:20px;">
-        <br/>
-        <h2><a name='research'>RESEARCH</a></h2>
-        <div style="text-align: left;">
-            <p>ANALYTICS, COMPUTER SCIENCE AND DATA SCIENCE</p>
-            <ul>
-                <li>Automated coding of qualitative research data. Using text mining, machine learning, and natural language processing techniques to identify themes in narrative interview data.</li>
-            </ul> 
-        </div>
-        <div style="text-align: left;">
-            <p>CLINICAL RESEARCH INFORMATICS AND DATA COLLECTION INFRASTRUCTURE</p>
-            <ul>
-                <li>Development of a computational model and associated system for management of clinical research metadata. This work focuses on standardizing and streamlining the process of developing clinical research studies using standard vocabularies.</li>
-            </ul> 
-        </div>
-    </div>
-    <div style="margin:100px;margin-top:10px; margin-bottom:20px;">
-        <br/>
-        <h2><a name='pubs'>SELECTED PUBLICATIONS</a></h2>
-        <div style="text-align: left;">
-            <p>ANALYTICS, COMPUTER SCIENCE AND DATA SCIENCE</p>
-            <ul>
-                <li>Wilson, K. A., Wallace, D. D., Goudar, S. S., Theriaque, D. W., & McClure, E. M. (2015). <a class='publink' href='publications/Bayesian.pdf' target='_BLANK'>Identifying causes of neonatal mortality from observational data: A Bayesian network approach.</a> In Proceedings of the 11th International Conference on Data Mining, pp. 132–138. Las Vegas: CSREA Press.</li>
-                <li>Chakraborty, A., Wilson, K. A., Green, N., Alur, S. K., Kumar, S., Ergin, F., et al. (2013). <a class='publink' href='https://www.amazon.com/Practical-Mining-Chapman-Knowledge-Discovery/dp/143986084X/ref=sr_1_1?ie=UTF8&qid=1488908957&sr=8-1&keywords=nagiza+samatova' target='_BLANK'>Link analysis.</a> In N. F. Samatova (Ed.), Practical graph mining with R (pp. 75–134). Data mining and knowledge discovery series. New York, NY: CRC Press.</li><li>  
-                Harrison, B., Wilson, K. A., Warren, M. L., Bright, K., Mosiman, J., Kancheria, J., et al. (2013). <a class='publink' href='https://www.amazon.com/Practical-Mining-Chapman-Knowledge-Discovery/dp/143986084X/ref=sr_1_1?ie=UTF8&qid=1488908957&sr=8-1&keywords=nagiza+samatova' target='_BLANK'>Cluster analysis.</a> In N. F. Samatova (Ed.), Practical graph mining with R (pp. 205–238). Data mining and knowledge discovery series. New York, NY: CRC Press.</li><li>   
-                Wilson, K. A., Agrawal, L., Gao, X., Green, N. D., Madhusoodanan, D., Riley, B., & Sigmon, J. P. (2013). <a class='publink' href='https://www.amazon.com/Practical-Mining-Chapman-Knowledge-Discovery/dp/143986084X/ref=sr_1_1?ie=UTF8&qid=1488908957&sr=8-1&keywords=nagiza+samatova' target='_BLANK'>Graph-based proximity measures.</a> In N. F. Samatova (Ed.), Practical graph mining with R (pp. 51–106). Data mining and knowledge discovery series. New York, NY: CRC Press.</li>
+      </aside>
+    
+      <div class="mdc-drawer-app-content">
+        <header class="mdc-top-app-bar app-bar" id="app-bar">
+          <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+              <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+              <span class="mdc-top-app-bar__title"><span lang="en">LAKANA Documents</span><span lang="fr">Documents LAKANA</span></span>
+            </section>
+          </div>
+        </header>
+    
+        <main class="main-content" id="main-content">
+          <div class="mdc-top-app-bar--fixed-adjust">
+            <section id="sopList">
+              <div class="mdc-list-group">
+                <div id="documents"></div>
+              </div>
+            </section>
+            <section id="sop"></section>
+          </div>
+        </main>
+      </div>
 
-                <li>Padmanabhan, K., Wilson, K. A., Rocha, A. M., Kuangyu, W., Mihelcic, J. R., & Samatova, N. F. (2012). <a href='publications/Pheno.pdf' class='publink' target='_BLANK'>In silico identification of phenotype-biased functional modules.</a> Proteome Science, 10(Suppl 1), S2. doi: 10.1186/1477-5956-10-S1-S2</li>
+      <script src="/app.js"></script>
 
-                <li>Wilson, K. A., Rocha, A. M., Padmanabhan, K., Wang, K., Chen, Z., Jin, Y., Mihelcic, J. R., & Samatova, N. F. (2011, November). <a class='publink' href='publications/Wilson.pdf' target='_BLANK'>Detecting pathway cross-talks by analyzing conserved functional modules across multiple phenotype-expressing organisms.</a> Presented at IEEE International Conference on Bioinformatics & Biomedicine, pp. 443–449. Atlanta, GA.
-                </li>
-                <li>Chen, Z., Wilson, K. A., Jin, Y., Hendrix, W., & Samatova, N. (2010, December). <a class='publink' href='publications/Chen.pdf' target='_BLANK'>Detecting and tracking community dynamics in evolutionary networks</a> In Workshop on Social Interactions Analysis and Service Providers (SIASP). Sydney, Australia.
-                </li>
-            </ul>
-            <p>CLINICAL RESEARCH INFORMATICS AND DATA COLLECTION INFRASTRUCTURE</p>
-            <ul>
-                <li>Walker, W. C., Carne, W., Franke, L., Nolen, T. L., Dikmen, S. D., Cifu, D. X., ... Williams, R. L. (2016). The Chronic Effects of Neurotrauma Consortium (CENC) multi-centre observational study: Description of study and characteristics of early participants. Brain Injury, 30(12), 1469.
-                </li>
-                <li>Wilson, K. A., Li, S., Rowshan, S., Severynse-Stevens, D., Smith, M., & Teicher, B. (2016, September). An informatics approach for the tracking and monitoring of pediatric preclinical cancer research. Presented at REDCapCon, Durham, NC.
-                </li>
-                <li>Wilson, K. A., Ham, M. W., Siege, C., Nolen, T., & Theriaque, D. W. (2016, May). A tool to generate and validate permuted-block randomization tables. Poster presented at Society for Clinical Trials 37th annual meeting, Montreal, Canada.
-                </li>
-                <li>Wilson, K. A., Siege, C., Ham, M. W., & Theriaque, D. W. (2016, May). The use of data visualization tools to monitor key clinical trial activities. Presented at Society for Clinical Trials 37th annual meeting, Montreal, Canada.
-                </li>
-                <li>Wilson, K. A., & Ham, M. W. (2016, March). An informatics approach for the curation and standardization of data elements on multi-center clinical trial networks. Presented at AMIA Summit on Clinical Research Informatics, San Francisco, CA.
-                </li>
-                <li>Theriaque, D. W., Wilson, K. A., Matthews, D. G., & Siege, C. (2015, August). Informatics best-practices to facilitate data sharing using the Federal Interagency TBI Research (FITBIR) informatics system. Presented at Military Health Systems Research Symposium, Fort Lauderdale, FL.
-                </li>
-                <li>Wilson, K. A., Ham, M. W., Moalli, P. A., Lockhart, M. E., Abramowitch, S. D., & Wallace, D. D. (2015, May). The use of open-source web-based tools to facilitate and support an MR imaging study of anterior vaginal wall descent in women with pelvic organ prolapse. Presented at Society for Clinical Trials 36th annual meeting, Arlington, VA.
-                </li>
+    </body>
 
-
-            </ul>
-            <p>GLOBAL HEALTH AND PUBLIC HEALTH INFORMATICS</p>
-            <ul>
-                <li>Wilson, K. A., & Litavecz, S. (2011, May). Training international researchers in the development and use of mobile technologies. Presented at International Field Directors and Technologies conference, Scottsdale, AZ.</li>
-                <li>Litavecz, S. D., & Wilson, K. A. (2008, September). Applying emerging technologies to improve clinical data collection. Presented at Society of Clinical Research Associates (SoCRA), Vancouver, Canada.
-                </li>
-                <li>Wilson, K. A., Litavecz, S. D., Hartwell, T. D., & Cressman, G. M. (2007). Capacity building: Preparing international researchers to develop and conduct future studies. Presented at 2007 Society of Clinical Research Associates (SOCRA), Denver, CO. 
-                </li>
-                <li>Litavecz, S., Wilson, K. A., Goco, N., & Torres, P. (2006). Building research capacity in developing countries. Poster presented at 2006 Society of Clinical Research Associates annual conference, Chicago, IL. 
-                </li>
-                <li>Litavecz, S., Wilson, K. A., & Parepalli, S. (2006). Developing data management systems for global clinical trials. Poster presented at 2006 Society of Clinical Research Associates annual conference, Chicago, IL. 
-                </li>
-
-            </ul>
-        </div>
-
-        <div>
-            <br/>
-            <h2><a name='skills'>SKILLS</a></h2>
-            <div style="text-align: left;">
-                <p>ANALYTICS AND DATA SCIENCE</p>
-                <ul>
-                    <li>General linear models (see EPIDEMIOLOGY & STATISTICS)</li>
-                    <li>Bayesian networks, causal bayesian networks, constraint and model-based learning</li>
-                    <li>Neural networks for clinical decision support</li>
-                    <li>Support vector machines and kernel methods</li>
-                    <li>Graph-based data mining methods</li>
-                    <li>K-means and agglomerative clustering</li>
-                    <li>Natural language processing and text mining</li> 
-                    <li>Machine learning experimental design and setup (e.g. model training and validation techniques)</li>                                         
-                </ul> 
-                <p>CLINICAL RESEARCH INFORMATICS</p>
-                <ul>
-                    <li>Data standards, ontologies and controlled vocabularies (e.g. ICD-9/10CM, SNOMED-CT, LOINC, MedDRA, RxNorm, CDISC ODM, CDASH, STDM)</li>
-                    <li>Basic semantic modeling with RDF, RDF-S and OWL</li>
-                    <li>Basic data analysis (see EPIDEMIOLOGY & STATISTICS)</li>
-                    <li>Clinical decision support, expert systems, artificial intelligence techniques</li>
-                    <li>Knowledge bases, logical inference, forward and backward chaining algorithms</li>
-                    <li>Basic knowledge of bioinformatics techniques and -omics technologies</li>
-                    <li>Basic but broad knowledge of human disease data collection requirements</li>                
-                </ul>
-                <p>DATA COLLECTION INFRASTRUCTURE</p>
-                <ul>
-                    <li>Development of clinical electronic data capture systems</li>
-                    <li>Clinical data management</li>
-                    <li>System and infrastructure development in support of multi-country clinical trials</li>
-                    <li>Development of data management plans and quality control procedures</li>
-                    <li>Data integration and harmonization</li>
-                    <li>Development of biospecimen tracking systems</li>
-                    <li>Reporting and visualization of clinical trial data and the data collection process</li>
-                </ul>  
-                <p>EPIDEMIOLOGY & STATISTICS</p>
-                <ul>
-                    <li>Basic epidemiological study designs (cross-sectional, cohort, case-control, RCT)</li>
-                    <li>Standardization techniques and basic descriptive statistics</li>
-                    <li>Closed form power and sample size estimates for simple study designs</li>
-                    <li>Screening and associated statistics (sensitivity, specificity, PPV, NPV, etc.)</li>
-                    <li>Simple inferential statistics, e.g. t-test, chi-square, etc.</li>                   
-                    <li>Working knowledge of infectious disease epidemiology in low-income countries</li>
-                    <li>Basic knowledge of outcome measure development</li>
-                    <li>Analysis with linear models (linear, logistic, poisson, hazard regression, higher-order models, lowess regression, hierarchical models)</li>
-                    <li>Model diagnostics: goodness of fit tests, Pearson residual analysis, leverage, residual plots</li>
-                    <li>Fixed effects and repeated-measures analysis of variance</li>
-                    <li>Matching and propensity scores</li>
-                    <li>Imputation methods</li>
-                    <li>Simple weighted survey analysis (e.g. NHANES)</li>
-                    <li>Qualitative research methods</li>
-                </ul>        
-
-                <p>SOFTWARE DEVELOPMENT</p>
-                <ul>
-                    <li>Development of EDC systems using Medidata Rave and REDCap</li>
-                    <li>Development of custom modules for Medidata Rave and REDCap</li>
-                    <li>Web development using ASP.Net and PHP (C# and VB)</li>
-                    <li>Relational database design and development
-                        <li>Client-side web technologies: JavaScript, jQuery, AJAX techhniques</li>
-                        <li>Website design</li>
-                        <li>Programming languages: VB, C#, C++, Java, PHP, Python, JavaScript, R</li>
-                    </ul>
-                    <p>SOFTWARE TOOLS</p>
-                    <ul>
-                        <li>Integrated development environments: Visual Studio, Eclipse, Android Studio</li>
-                        <li>Statistical analysis: SAS, Stata, R</li>
-                    </ul>                
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
 </html>
