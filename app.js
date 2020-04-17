@@ -98,7 +98,7 @@ function openSop(name) {
                 var embeddedSops = document.querySelectorAll("sop-process");         
                 let items = Array.from(embeddedSops).map(elem => {
                 const incName = elem.src;
-                fetch(`./content/${incName}.inc`).then(
+                fetch(`./content/${incName}`).then(
                     (response) => response.text(). then(
                         (incHtml) => {
                             elem.innerHTML = incHtml;

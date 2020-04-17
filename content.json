@@ -10,7 +10,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop1.inc",
+            "url": "sop1.html",
             "category": "Draft SOPs",
             "icon": "description"
         },
@@ -22,7 +22,7 @@
             "available": true,
             "visible": true,
             "language": "fr",
-            "url": "sop1.inc",
+            "url": "sop1.html",
             "category": "Projet de sops",
             "icon": "description"
         },
@@ -34,7 +34,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop2.inc",
+            "url": "sop2.html",
             "category": "Draft SOPs",
             "icon": "description"
         },
@@ -46,7 +46,7 @@
             "available": false,
             "visible": true,
             "language": "en",
-            "url": "sop3.inc",
+            "url": "sop3.html",
             "category": "Draft SOPs",
             "icon": "description"
         },
@@ -58,7 +58,7 @@
             "available": true,
             "visible": true,
             "language": "fr",
-            "url": "sop1.inc",
+            "url": "sop1.html",
             "category": "Préparation du site d'étude",
             "icon": "work"
         },
@@ -70,7 +70,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop2.inc",
+            "url": "sop2.html",
             "category": "Study site preparations",
             "icon": "work"
         },
@@ -82,7 +82,7 @@
             "available": false,
             "visible": true,
             "language": "en",
-            "url": "sop3.inc",
+            "url": "sop3.html",
             "category": "Study site preparations",
             "icon": "work"
         },
@@ -94,7 +94,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop1.inc",
+            "url": "sop1.html",
             "category": "Data entry instructions",
             "icon": "settings_system_daydream"
         },
@@ -106,7 +106,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop2.inc",
+            "url": "sop2.html",
             "category": "Data entry instructions",
             "icon": "settings_system_daydream"
         },
@@ -118,7 +118,7 @@
             "available": false,
             "visible": true,
             "language": "en",
-            "url": "sop3.inc",
+            "url": "sop3.html",
             "category": "Data entry instructions",
             "icon": "settings_system_daydream"
         },
@@ -130,7 +130,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop1.inc",
+            "url": "sop1.html",
             "category": "Study reports",
             "icon": "insert_chart"
         },
@@ -142,7 +142,7 @@
             "available": true,
             "visible": true,
             "language": "en",
-            "url": "sop2.inc",
+            "url": "sop2.html",
             "category": "Study reports",
             "icon": "insert_chart"
         },
@@ -154,7 +154,7 @@
             "available": false,
             "visible": true,
             "language": "en",
-            "url": "sop3.inc",
+            "url": "sop3.html",
             "category": "Study reports",
             "icon": "insert_chart"
         }
