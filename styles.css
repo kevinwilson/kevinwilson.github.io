@@ -2,6 +2,7 @@ body {
     margin:0;
     display: flex;
     height: 100vh;
+    counter-reset : h2;
 }
 
 .mdc-drawer-app-content {
@@ -23,33 +24,54 @@ body {
     z-index: 7;
 }
 
-.lakana-document {
+article {
     margin:20px;
-    font-family: 'Times New Roman', Times, serif;
+
+}
+  
+h2 {
+    counter-reset : h3;
 }
 
-.lakana-document h1 {
-    counter-reset: h2counter;
+h3 {
+    counter-reset : h4;
 }
-.lakana-document h2:before {
-    content: counter(h2counter) ".\0000a0\0000a0";
-    counter-increment: h2counter;
-    counter-reset: h3counter;
+
+h4 {
+    counter-reset : h5;
+    display: inline;
 }
-.lakana-document h3:before {
-    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-    counter-increment: h3counter;
+
+h5 {
+    counter-reset : h6;
 }
-.lakana-document h4:before {
-    content: counter(h2counter) "." counter(h3counter)  "." counter(h4counter) ".\0000a0\0000a0";
-    counter-increment: h4counter;
     
+article h2:before {
+    content : counter(h2,decimal) ". ";
+    counter-increment : h2;
 }
-.lakana-document h4 {
-    display:inline;
-    padding-left: 2em;
+    
+article h3:before {
+    content : counter(h2,decimal) "." counter(h3,decimal) ". ";
+    counter-increment : h3;
 }
-
-.lakana-document h3 {
-    padding-left: 1em;
+    
+article h4:before {
+    content : counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) ". ";
+    counter-increment : h4;
+ }
+    
+article h5:before {
+    content : counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) ". ";
+    counter-increment : h5;
+}
+    
+article h6:before {
+    content : counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) "." counter(h6,decimal) ". ";
+    counter-increment : h6;
+}
+    
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+    content : "";
+    counter-increment : none;
 }
