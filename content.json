@@ -2,8 +2,8 @@
     "content-version": "1.0",
     "content-date": "2020-04-17",
     "documents": [
-        {   "version": "2.0",
-            "date": "2020-04-15",
+        {   "version": "1.0",
+            "date": "2020-03-29",
             "number": "S01",
             "title": "Initiating a visit - main study",
             "author": "Laura Adubra and Per Ashorn",
@@ -14,8 +14,8 @@
             "category": "Draft SOPs",
             "icon": "description"
         },
-        {   "version": "2.0",
-            "date": "2020-04-15",
+        {   "version": "1.0",
+            "date": "2020-03-29",
             "number": "S01",
             "title": "Initier une visite - étude principale",
             "author": "Laura Adubra and Per Ashorn",
