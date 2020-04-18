@@ -104,3 +104,18 @@ article.sop h5 {
 article {
     font-weight: lighter;
 }
+
+article table {
+    border-collapse: collapse;
+  }
+  
+  article table, th, td {
+    border: 1px solid grey;
+    padding: 8px 8px 8px 8px;
+    font-size: 1em;
+  }
+
+  article th {
+      font-weight: 400;
+      text-align: left;
+  }

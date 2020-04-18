@@ -84,22 +84,45 @@ function UpdateContent(category) {
 
     translateContent(selectedLanguage);
 
-    updateVersionInfromation
+    //updateVersionInformation();s
 }
 
-function openSop(name) {
+function openSop(name, version, versionDate) {
     fetch(`./content/${name}`).then(
         (response) => response.text()).then(
             (html) => {
                 const sop = document.getElementById('sop');
                 const sopList = document.getElementById('sopList');
-                sop.innerHTML = html;
+                sop.innerHTML = `               
+                    <div style="margin-left:20px; margin-top:20px; margin-bottom:0px">
+                    <div class="mdc-chip" role="row" style="align: right;">
+                        <div class="mdc-chip__ripple"></div>
+                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">refresh</i>
+                        <span role="gridcell">
+                            <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                                <span class="mdc-chip__text">Version: ${version}</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="mdc-chip" role="row" style="align: right;">
+                        <div class="mdc-chip__ripple"></div>
+                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">today</i>
+                        <span role="gridcell">
+                            <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                                <span class="mdc-chip__text">Updated: ${versionDate}</span>
+                            </span>            
+                        </span>
+                    </div>
+                 </div>
+                `;
+                sop.innerHTML += html;
                 sopList.hidden = true;
+
                 var embeddedSops = document.querySelectorAll("sop-process");         
                 let items = Array.from(embeddedSops).map(elem => {
                 const incName = elem.src;
                 fetch(`./content/${incName}`).then(
-                    (response) => response.text(). then(
+                    (response) => response.text().then(
                         (incHtml) => {
                             elem.innerHTML = incHtml;
                         }  
@@ -107,7 +130,12 @@ function openSop(name) {
                 )
             }
         )
+        sop.innerHTML += ` <div style="margin-left:20px; margin-bottom:20px;"> <button class="mdc-button mdc-button--raised" onclick="closeSop();">
+                            <span class="mdc-button__ripple"></span>
+                                Close document
+                            </button></div>`;
     });
+ 
 }
 
 function closeSop() {
@@ -124,7 +152,7 @@ function createListItem(document) {
 
     let listItemMarkup = '';
     let menuItemMarkup = '';
-    let linkMarkup = `onclick="openSop('${document.url}');"`;
+    let linkMarkup = `onclick="openSop('${document.url}', '${document.version}', '${document.date}');"`;
     let currentCategory = escape(document.category);
 
     if (document.visible === false) {
