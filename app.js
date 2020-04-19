@@ -4,6 +4,11 @@
 //     });
 // }
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then((registration) => console.log('Service worker registered', registration))
+    .catch((error) => console.log('Service worker not registered', error));
+}
 
 // Custom HTML element for embedding SOP processes in larger documents
 
@@ -84,7 +89,6 @@ function UpdateContent(category) {
 
     translateContent(selectedLanguage);
 
-    //updateVersionInformation();s
 }
 
 function openSop(name, version, versionDate) {
@@ -130,7 +134,7 @@ function openSop(name, version, versionDate) {
                 )
             }
         )
-        sop.innerHTML += ` <div style="margin-left:20px; margin-bottom:20px;"> <button class="mdc-button mdc-button--raised" onclick="closeSop();">
+        sop.innerHTML += ` <div style="margin-left:20px; margin-bottom:40px;"> <button class="mdc-button mdc-button--raised" onclick="closeSop();">
                             <span class="mdc-button__ripple"></span>
                                 Close document
                             </button></div>`;
