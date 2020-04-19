@@ -7,6 +7,7 @@ const assets = [
   '/styles.css',
   '/content/sop1.html',
   '/content/process1.html',
+  '/content.json',
   'https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css',
