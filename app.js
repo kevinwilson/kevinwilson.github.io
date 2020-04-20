@@ -245,10 +245,11 @@ function setLanguage(language) {
 }
 
 function reloadDocuments() {
-    alert('Reloading documents');
-    // caches.delete('lakana-documents-v1').then(
-    //     location.reload()
-    // ); 
+    caches.delete('lakana-documents-v1').then(() => {
+        const dialog = new mdc.dialog.MDCDialog(document.querySelector('.mdc-dialog'));
+        dialog.open();
+        window.location.href ='/index.html';
+    }); 
 }
 
 
