@@ -1,14 +1,14 @@
-const lakanaDocumentsCache = 'lakana-documents-v1';
+const lakanaDocumentsCache = 'lakana-documents-v2';
 
 const includes = [
-  '/node_modules/material-components-web/dist/material-components-web.min.js',
-  '/node_modules/material-components-web/dist/material-components-web.min.css',
-  '/node_modules/material-components-web/dist/material-components-web.min.css.map',
-  '/node_modules/material-design-icons/iconfont/material-icons.css',
-  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot',
-  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2',
-  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff',
-  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf'
+  '/includes/material-components-web/dist/material-components-web.min.js',
+  '/includes/material-components-web/dist/material-components-web.min.css',
+  '/includes/material-components-web/dist/material-components-web.min.css.map',
+  '/includes/material-design-icons/iconfont/material-icons.css',
+  '/includes/material-design-icons/iconfont/MaterialIcons-Regular.eot',
+  '/includes/material-design-icons/iconfont/MaterialIcons-Regular.woff2',
+  '/includes/material-design-icons/iconfont/MaterialIcons-Regular.woff',
+  '/includes/material-design-icons/iconfont/MaterialIcons-Regular.ttf'
 ];
 
 const assets = [
