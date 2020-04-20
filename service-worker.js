@@ -1,15 +1,6 @@
 const lakanaDocumentsCache = 'lakana-documents-v1';
 
-
-const assets = [
-  '/',
-  '/index.html',
-  '/app.js',
-  '/lakana.ico',
-  '/styles.css',
-  '/content/sop1.html',
-  '/content/process1.html',
-  '/content.json',
+const includes = [
   '/node_modules/material-components-web/dist/material-components-web.min.js',
   '/node_modules/material-components-web/dist/material-components-web.min.css',
   '/node_modules/material-components-web/dist/material-components-web.min.css.map',
@@ -20,9 +11,21 @@ const assets = [
   '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf'
 ];
 
+const assets = [
+  '/',
+  '/index.html',
+  '/app.js',
+  '/lakana.ico',
+  '/styles.css',
+  '/content/sop1.html',
+  '/content/process1.html',
+  '/content.json'
+];
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(lakanaDocumentsCache).then((cache) => {
+      cache.addAll(includes);    
       cache.addAll(assets);
     })
   );
