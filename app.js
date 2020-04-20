@@ -56,7 +56,7 @@ function UpdateContent(category) {
 
     menu.innerHTML = `
         <a class="mdc-list-item ${active}" href="#" aria-current="page" onclick="UpdateContent('');">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmarks</i>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">collections</i>
         <span class="mdc-list-item__text"><span lang="en">All documents</span><span lang="fr">Tous les documents</span></span>
         </a>
     `;
