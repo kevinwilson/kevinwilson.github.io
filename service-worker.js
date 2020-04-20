@@ -37,7 +37,7 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         keys
           .filter(key => key !== lakanaDocumentsCache)
-          .map(key => caches.delete(key))
+          .map(key => caches.delete())
         )
     })
   )
@@ -49,5 +49,3 @@ self.addEventListener('fetch', (event) => {
       return cacheResponse || fetch(event.request);
     }))
 });
-
-

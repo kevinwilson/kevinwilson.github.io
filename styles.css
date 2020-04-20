@@ -78,31 +78,40 @@ h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.n
 
 article.sop h1 {
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: 400;
+  /*  font-weight: lighter; */
 }
 
 article.sop h2 {
     font-size: 1.5em;
-    font-weight: lighter;
+    font-weight: 400;
+
+   /*  font-weight: lighter; */
 }
 
 article.sop h3 {
     font-size: 1.2em;
-    font-weight: lighter;
+    font-weight: 400;
+  /*   font-weight: lighter; */
 }
 
 article.sop h4 {
     font-size: 1.0em;
-    font-weight:lighter;
+    font-weight: 400;
+  /*   font-weight:lighter; */
 }
 
 article.sop h5 {
     font-size: 1.0em;
-    font-weight:lighter;
+    font-weight: 400;
+   /*  font-weight:lighter; */
 }
 
+
+
 article {
-    font-weight: lighter;
+   /*  font-weight: lighter; */
+
 }
 
 article table {

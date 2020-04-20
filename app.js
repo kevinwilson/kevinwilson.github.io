@@ -244,5 +244,11 @@ function setLanguage(language) {
     translateContent(language);
 }
 
+function reloadDocuments() {
+    alert('Reloading documents');
+    // caches.delete('lakana-documents-v1').then(
+    //     location.reload()
+    // ); 
+}
 
 
