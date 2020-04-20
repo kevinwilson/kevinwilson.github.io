@@ -1,8 +1,8 @@
-// if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker.register('/service-worker.js')
-//     .then((registration) => console.log('Service worker registered'))
-//     .catch((error) => console.log('Service worker not registered', error));
-// }
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then((registration) => console.log('Service worker registered'))
+    .catch((error) => console.log('Service worker not registered', error));
+}
 
 // Custom HTML element for embedding SOP processes in larger documents
 

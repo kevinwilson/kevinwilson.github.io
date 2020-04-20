@@ -1,5 +1,6 @@
 const lakanaDocumentsCache = 'lakana-documents-v1';
 
+
 const assets = [
   '/',
   '/index.html',
@@ -9,11 +10,14 @@ const assets = [
   '/content/sop1.html',
   '/content/process1.html',
   '/content.json',
-  'https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js',
-  'https://fonts.googleapis.com/icon?family=Material+Icons',
-  'https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css',
-  'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
-  'https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2'
+  '/node_modules/material-components-web/dist/material-components-web.min.js',
+  '/node_modules/material-components-web/dist/material-components-web.min.css',
+  '/node_modules/material-components-web/dist/material-components-web.min.css.map',
+  '/node_modules/material-design-icons/iconfont/material-icons.css',
+  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.eot',
+  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2',
+  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff',
+  '/node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf'
 ];
 
 self.addEventListener('install', (event) => {
