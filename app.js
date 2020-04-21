@@ -1,8 +1,8 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then((registration) => console.log('Service worker registered'))
-    .catch((error) => console.log('Service worker not registered', error));
-}
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('/service-worker.js')
+//     .then((registration) => console.log('Service worker registered'))
+//     .catch((error) => console.log('Service worker not registered', error));
+// }
 
 // Custom HTML element for embedding SOP processes in larger documents
 
@@ -245,10 +245,11 @@ function setLanguage(language) {
 }
 
 function reloadDocuments() {
-    caches.delete('lakana-documents-v1').then(() => {
+    caches.delete('lakana-documents-v2').then(() => {
         const dialog = new mdc.dialog.MDCDialog(document.querySelector('.mdc-dialog'));
         dialog.open();
-        window.location.href ='/index.html';
+        
+        //window.location.href ='/index.html';
     }); 
 }
 

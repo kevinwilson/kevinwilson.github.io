@@ -1,4 +1,4 @@
-const lakanaDocumentsCache = 'lakana-documents-v2';
+const lakanaDocumentsCache = 'lakana-documents-v4';
 
 const includes = [
   '/includes/material-components-web/dist/material-components-web.min.js',
@@ -19,7 +19,9 @@ const assets = [
   '/styles.css',
   '/content/sop1.html',
   '/content/process1.html',
-  '/content.json'
+  '/content.json',
+  '/content/example.png',
+  '/content/report1.html'
 ];
 
 self.addEventListener('install', (event) => {
